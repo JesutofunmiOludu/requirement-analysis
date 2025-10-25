@@ -97,4 +97,31 @@ Non-functional requirements describe **how** the system must perform — the qua
   The final step ensures that documented requirements accurately represent stakeholder needs and are achievable within project constraints. Validation activities include reviews, walkthroughs, and approval sessions with clients and team members.
 
 ---
+## Acceptance Criteria
+
+### Importance of Acceptance Criteria
+**Acceptance Criteria** are the specific conditions that a software product or feature must meet to be accepted by users, stakeholders, or product owners.  
+They serve as a clear definition of what “done” means for each feature, ensuring all parties have a shared understanding of expected behavior before development begins.  
+
+Acceptance Criteria are important because they:
+- Provide **clarity** and **transparency** between developers, testers, and stakeholders.  
+- Help define **scope boundaries**, preventing feature creep and misunderstandings.  
+- Serve as the basis for **test cases** and **quality assurance** activities.  
+- Ensure that the delivered feature meets **user needs** and **business goals**.  
+
+### Example: Checkout Feature in the Booking Management System
+Below is an example of acceptance criteria for the **Checkout** feature, which handles payments and booking confirmations.
+
+**Feature:** Checkout and Payment Processing  
+
+**Acceptance Criteria:**  
+- ✅ The user can proceed to checkout only if at least one room is selected for booking.  
+- ✅ The system must display a summary of the booking, including room details, check-in/check-out dates, total cost, and applicable taxes.  
+- ✅ The user can choose a payment method (e.g., credit card, PayPal, or wallet balance).  
+- ✅ The system must securely process the payment through the integrated payment gateway (e.g., Stripe or Paystack).  
+- ✅ Upon successful payment, the system must generate a unique booking ID and send a confirmation email to the user.  
+- ✅ If the payment fails, the system must display an error message and allow the user to retry or choose a different payment method.  
+- ✅ The system must update room availability in real-time after successful payment to prevent double booking.
+
+This ensures that the **Checkout** feature meets both user expectations and business requirements before deployment.
 
