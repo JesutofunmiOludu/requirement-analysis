@@ -70,6 +70,29 @@ Below are the five key activities involved:
 - **Requirement Analysis and Modeling:**  
   Here, the gathered requirements are analyzed for feasibility, consistency, and completeness. Modeling tools such as data flow diagrams (DFDs), UML diagrams, or prototypes are used to visualize and validate system behavior before implementation.
 
+## Types of Requirements
+
+### Functional Requirements  
+Functional requirements describe **what** the system must do — the specific behaviors, features and functions that the booking-management system must provide.  
+**Examples** for the booking management project:  
+- The system shall allow a user to search for available hotel rooms by location, date range and number of guests.  
+- The system shall enable a user to select a room, submit a booking request and receive a booking confirmation.  
+- The system shall permit hotel managers to list new properties, update room inventory and manage bookings for their property.  
+- The system shall integrate with a payment gateway to process customer payments and store payment transaction status.  
+- The system shall send push notifications or email confirmations to users and hotel managers when a booking is confirmed or cancelled.
+
+### Non-functional Requirements  
+Non-functional requirements describe **how** the system must perform — the qualities, constraints and attributes of the system rather than specific functions.  
+**Examples** for the booking management project:  
+- **Performance**: The system should return search results within 2 seconds and handle 10,000 concurrent users during peak hours.  
+- **Scalability**: The system architecture must support horizontal scaling of the “Search + Booking” service to cope with high traffic volumes. 
+- **Reliability / Availability**: The system shall be available 99.9% of the time and ensure transactional consistency even during database failover scenarios.  
+- **Security**: User data and payment information must be encrypted in transit and at rest; the system must comply with industry standards for data protection.  
+- **Usability**: The user interface should allow new users to complete a booking in under 3 minutes without training; the mobile and web apps must provide a consistent, intuitive experience.  
+- **Maintainability**: The service components must be modular (e.g., microservice architecture) to allow independent updates with minimal downtime.  
+
+
+
 - **Requirement Validation:**  
   The final step ensures that documented requirements accurately represent stakeholder needs and are achievable within project constraints. Validation activities include reviews, walkthroughs, and approval sessions with clients and team members.
 
